@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "uso de sequilazer",
+  "main": "main.js",
+"type": "module",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "author": "odiseo esmerlin rincon sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.3.0",
+    "node": "^20.1.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.31.1"
+  }
+}
