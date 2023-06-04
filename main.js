@@ -1,7 +1,7 @@
 
 import express  from "express";
-import {DataTypes} from 'sequelize'
 import db from "./db.js";
+import movie from "./model.js";
 const app = express();     
 
 
@@ -25,38 +25,6 @@ async function conectar()
 
 conectar() 
  
-
-const movie = db.define('movies',{
-    id:
-    {
-        type:DataTypes.INTEGER,
-        primaryKey:true
-    },
-
-    titulo:
-    {
-        type:DataTypes.STRING,
-        allowNull:false
-    },
-
-    descripcion:
-    {
-        type:DataTypes.STRING,
-        allowNull:false
-    }, 
-
-    fecha:
-    {
-        type:DataTypes.STRING,
-        allowNull:false
-    },
-
-    imagen:
-    {
-        type:DataTypes.STRING,
-        allowNull:false
-    },
-},{tableName:'movies'})
 
 
     app.get('/selectAll',async (req,res)=>
